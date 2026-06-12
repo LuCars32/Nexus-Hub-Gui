@@ -699,7 +699,7 @@ Switch.TextSize = 17
 
 TextButton_Roundify_4px_4.Name = "TextButton_Roundify_4px"
 TextButton_Roundify_4px_4.Parent = Switch
-TextButton_Roundify_4px_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_Roundify_4px_4.BackgroundColor3 = Color3.new(128, 0, 128)
 TextButton_Roundify_4px_4.BackgroundTransparency = 1
 TextButton_Roundify_4px_4.Size = UDim2.new(1, 0, 1, 0)
 TextButton_Roundify_4px_4.Image = "rbxassetid://2851929490"
@@ -711,7 +711,7 @@ TextButton_Roundify_4px_4.SliceCenter = Rect.new(4, 4, 4, 4)
 Title_3.Name = "Title"
 Title_3.Parent = Switch
 Title_3.BackgroundColor3 = Color3.new(1, 1, 1)
-Title_3.BackgroundTransparency = 1
+Title_3.BackgroundTransparency = 0.4
 Title_3.Position = UDim2.new(1.20000005, 0, 0, 0)
 Title_3.Size = UDim2.new(0, 20, 0, 20)
 Title_3.Font = Enum.Font.Garamond
