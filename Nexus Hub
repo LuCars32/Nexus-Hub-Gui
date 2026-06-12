@@ -19,7 +19,7 @@ local Bar = Instance.new("Frame")
 local Toggle = Instance.new("ImageButton")
 local Base = Instance.new("ImageLabel")
 local Top = Instance.new("ImageLabel")
-local Tabs = Instance.new("ScrollingFrame")
+local Tabs = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local TabSelection = Instance.new("ImageLabel")
 local TabButtons = Instance.new("Frame")
@@ -92,15 +92,16 @@ Prefabs.BackgroundColor3 = Color3.new(1, 1, 1)
 Prefabs.Size = UDim2.new(0, 100, 0, 100)
 Prefabs.Visible = false
 
+
 Label.Name = "Label"
 Label.Parent = Prefabs
 Label.BackgroundColor3 = Color3.new(1, 1, 1)
 Label.BackgroundTransparency = 1
 Label.Size = UDim2.new(0, 200, 0, 20)
-Label.Font = Enum.Font.GothamSemibold
+Label.Font = Enum.Font.Garamond
 Label.Text = "Hello, world 123"
 Label.TextColor3 = Color3.new(1, 1, 1)
-Label.TextSize = 14
+Label.TextSize = 17
 Label.TextXAlignment = Enum.TextXAlignment.Left
 
 Window.Name = "Window"
@@ -114,6 +115,8 @@ Window.Selectable = true
 Window.Size = UDim2.new(0, 200, 0, 200)
 Window.Image = "rbxassetid://2851926732"
 Window.ImageColor3 = Color3.new(0.0823529, 0.0862745, 0.0901961)
+Window.ImageTransparency = 0.4
+Window.BackgroundTransparency = 0.4
 Window.ScaleType = Enum.ScaleType.Slice
 Window.SliceCenter = Rect.new(12, 12, 12, 12)
 
@@ -141,7 +144,7 @@ Toggle.Position = UDim2.new(0, 5, 0, -2)
 Toggle.Rotation = 90
 Toggle.Size = UDim2.new(0, 20, 0, 20)
 Toggle.ZIndex = 2
-Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=111869507691097"
+Toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=79182952572284"
 
 Base.Name = "Base"
 Base.Parent = Bar
@@ -171,11 +174,6 @@ Tabs.BackgroundColor3 = Color3.new(1, 1, 1)
 Tabs.BackgroundTransparency = 1
 Tabs.Position = UDim2.new(0, 15, 0, 60)
 Tabs.Size = UDim2.new(1, -30, 1, -60)
-Tabs.CanvasSize = UDim2.new(0, 0, 0, 0)
-Tabs.AutomaticCanvasSize = Enum.AutomaticSize.Y
-Tabs.ScrollBarThickness = 6
-Tabs.ScrollBarImageColor3 = Color3.fromRGB(80, 80, 80)
-Tabs.BorderSizePixel = 0
 
 Title.Name = "Title"
 Title.Parent = Window
@@ -183,10 +181,10 @@ Title.BackgroundColor3 = Color3.new(1, 1, 1)
 Title.BackgroundTransparency = 1
 Title.Position = UDim2.new(0, 30, 0, 3)
 Title.Size = UDim2.new(0, 200, 0, 20)
-Title.Font = Enum.Font.GothamBold
+Title.Font = Enum.Font.Garamond
 Title.Text = "Gamer Time"
 Title.TextColor3 = Color3.new(1, 1, 1)
-Title.TextSize = 14
+Title.TextSize = 17
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
 TabSelection.Name = "TabSelection"
@@ -234,14 +232,14 @@ TextBox.Parent = Prefabs
 TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox.BackgroundTransparency = 1
 TextBox.BorderSizePixel = 0
-TextBox.Size = UDim2.new(1, 0, 0, 20)
+TextBox.Size = UDim2.new(0, 320, 0, 20)
 TextBox.ZIndex = 2
-TextBox.Font = Enum.Font.GothamSemibold
+TextBox.Font = Enum.Font.Garamond
 TextBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
 TextBox.PlaceholderText = "Input Text"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-TextBox.TextSize = 14
+TextBox.TextSize = 17
 
 TextBox_Roundify_4px.Name = "TextBox_Roundify_4px"
 TextBox_Roundify_4px.Parent = TextBox
@@ -271,10 +269,10 @@ Title_2.BackgroundTransparency = 1
 Title_2.Position = UDim2.new(0.5, 0, 0.5, -10)
 Title_2.Size = UDim2.new(0, 0, 0, 20)
 Title_2.ZIndex = 2
-Title_2.Font = Enum.Font.GothamBold
+Title_2.Font = Enum.Font.Garamond
 Title_2.Text = "Slider"
 Title_2.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Title_2.TextSize = 14
+Title_2.TextSize = 17
 
 Indicator.Name = "Indicator"
 Indicator.Parent = Slider
@@ -292,30 +290,30 @@ Value.BackgroundColor3 = Color3.new(1, 1, 1)
 Value.BackgroundTransparency = 1
 Value.Position = UDim2.new(1, -55, 0.5, -10)
 Value.Size = UDim2.new(0, 50, 0, 20)
-Value.Font = Enum.Font.GothamBold
+Value.Font = Enum.Font.Garamond
 Value.Text = "0%"
 Value.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Value.TextSize = 14
+Value.TextSize = 17
 
 TextLabel.Parent = Slider
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
 TextLabel.Position = UDim2.new(1, -20, -0.75, 0)
 TextLabel.Size = UDim2.new(0, 26, 0, 50)
-TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Font = Enum.Font.Garamond
 TextLabel.Text = "]"
 TextLabel.TextColor3 = Color3.new(0.627451, 0.627451, 0.627451)
-TextLabel.TextSize = 14
+TextLabel.TextSize = 17
 
 TextLabel_2.Parent = Slider
 TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel_2.BackgroundTransparency = 1
 TextLabel_2.Position = UDim2.new(1, -65, -0.75, 0)
 TextLabel_2.Size = UDim2.new(0, 26, 0, 50)
-TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Font = Enum.Font.Garamond
 TextLabel_2.Text = "["
 TextLabel_2.TextColor3 = Color3.new(0.627451, 0.627451, 0.627451)
-TextLabel_2.TextSize = 14
+TextLabel_2.TextSize = 17
 
 Circle.Name = "Circle"
 Circle.Parent = Prefabs
@@ -335,12 +333,12 @@ Dropdown.BackgroundColor3 = Color3.new(1, 1, 1)
 Dropdown.BackgroundTransparency = 1
 Dropdown.BorderSizePixel = 0
 Dropdown.Position = UDim2.new(-0.055555556, 0, 0.0833333284, 0)
-Dropdown.Size = UDim2.new(0, 200, 0, 20)
+Dropdown.Size = UDim2.new(0, 320, 0, 20)
 Dropdown.ZIndex = 2
-Dropdown.Font = Enum.Font.GothamBold
+Dropdown.Font = Enum.Font.Garamond
 Dropdown.Text = "      Dropdown"
 Dropdown.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Dropdown.TextSize = 14
+Dropdown.TextSize = 17
 Dropdown.TextXAlignment = Enum.TextXAlignment.Left
 
 Indicator_2.Name = "Indicator"
@@ -396,10 +394,10 @@ TabButton.BorderSizePixel = 0
 TabButton.Position = UDim2.new(0.185185179, 0, 0, 0)
 TabButton.Size = UDim2.new(0, 71, 0, 20)
 TabButton.ZIndex = 2
-TabButton.Font = Enum.Font.GothamSemibold
+TabButton.Font = Enum.Font.Garamond
 TabButton.Text = "Test tab"
 TabButton.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-TabButton.TextSize = 14
+TabButton.TextSize = 17
 
 TextButton_Roundify_4px_2.Name = "TextButton_Roundify_4px"
 TextButton_Roundify_4px_2.Parent = TabButton
@@ -429,10 +427,10 @@ Button.BackgroundTransparency = 1
 Button.BorderSizePixel = 0
 Button.Size = UDim2.new(1, 0, 0, 20)
 Button.ZIndex = 2
-Button.Font = Enum.Font.GothamSemibold
+Button.Font = Enum.Font.Garamond
 Button.Text = "      Folder"
 Button.TextColor3 = Color3.new(1, 1, 1)
-Button.TextSize = 14
+Button.TextSize = 17
 Button.TextXAlignment = Enum.TextXAlignment.Left
 
 TextButton_Roundify_4px_3.Name = "TextButton_Roundify_4px"
@@ -694,10 +692,10 @@ Switch.BorderSizePixel = 0
 Switch.Position = UDim2.new(0.229411766, 0, 0.20714286, 0)
 Switch.Size = UDim2.new(0, 20, 0, 20)
 Switch.ZIndex = 2
-Switch.Font = Enum.Font.SourceSans
+Switch.Font = Enum.Font.Garamond
 Switch.Text = ""
 Switch.TextColor3 = Color3.new(1, 1, 1)
-Switch.TextSize = 18
+Switch.TextSize = 17
 
 TextButton_Roundify_4px_4.Name = "TextButton_Roundify_4px"
 TextButton_Roundify_4px_4.Parent = Switch
@@ -716,10 +714,10 @@ Title_3.BackgroundColor3 = Color3.new(1, 1, 1)
 Title_3.BackgroundTransparency = 1
 Title_3.Position = UDim2.new(1.20000005, 0, 0, 0)
 Title_3.Size = UDim2.new(0, 20, 0, 20)
-Title_3.Font = Enum.Font.GothamSemibold
+Title_3.Font = Enum.Font.Garamond
 Title_3.Text = "Switch"
 Title_3.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Title_3.TextSize = 14
+Title_3.TextSize = 17
 Title_3.TextXAlignment = Enum.TextXAlignment.Left
 
 Button_2.Name = "Button"
@@ -729,9 +727,9 @@ Button_2.BackgroundTransparency = 1
 Button_2.BorderSizePixel = 0
 Button_2.Size = UDim2.new(0, 91, 0, 20)
 Button_2.ZIndex = 2
-Button_2.Font = Enum.Font.GothamSemibold
+Button_2.Font = Enum.Font.Garamond
 Button_2.TextColor3 = Color3.new(1, 1, 1)
-Button_2.TextSize = 14
+Button_2.TextSize = 17
 
 TextButton_Roundify_4px_5.Name = "TextButton_Roundify_4px"
 TextButton_Roundify_4px_5.Parent = Button_2
@@ -749,10 +747,10 @@ DropdownButton.BackgroundColor3 = Color3.new(0.129412, 0.133333, 0.141176)
 DropdownButton.BorderSizePixel = 0
 DropdownButton.Size = UDim2.new(1, 0, 0, 20)
 DropdownButton.ZIndex = 3
-DropdownButton.Font = Enum.Font.GothamBold
+DropdownButton.Font = Enum.Font.Garamond
 DropdownButton.Text = "      Button"
 DropdownButton.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-DropdownButton.TextSize = 14
+DropdownButton.TextSize = 17
 DropdownButton.TextXAlignment = Enum.TextXAlignment.Left
 
 Keybind.Name = "Keybind"
@@ -770,10 +768,10 @@ Title_4.Parent = Keybind
 Title_4.BackgroundColor3 = Color3.new(1, 1, 1)
 Title_4.BackgroundTransparency = 1
 Title_4.Size = UDim2.new(0, 0, 1, 0)
-Title_4.Font = Enum.Font.GothamBold
+Title_4.Font = Enum.Font.Garamond
 Title_4.Text = "Keybind"
 Title_4.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Title_4.TextSize = 14
+Title_4.TextSize = 17
 Title_4.TextXAlignment = Enum.TextXAlignment.Left
 
 Input.Name = "Input"
@@ -784,10 +782,10 @@ Input.BorderSizePixel = 0
 Input.Position = UDim2.new(1, -85, 0, 2)
 Input.Size = UDim2.new(0, 80, 1, -4)
 Input.ZIndex = 2
-Input.Font = Enum.Font.GothamSemibold
+Input.Font = Enum.Font.Garamond
 Input.Text = "RShift"
 Input.TextColor3 = Color3.new(0.784314, 0.784314, 0.784314)
-Input.TextSize = 12
+Input.TextSize = 15
 Input.TextWrapped = true
 
 Input_Roundify_4px.Name = "Input_Roundify_4px"
@@ -956,6 +954,10 @@ function library:AddWindow(title, options)
 	local Window = Prefabs:FindFirstChild("Window"):Clone()
 	Window.Parent = Windows
 	Window:FindFirstChild("Title").Text = title
+   local corner = Instance.new("UICorner")
+  corner.CornerRadius = UDim.new(0, 12)  -- Puedes cambiar 12 por el valor que quieras
+  corner.Parent = Window
+
 	Window.Size = UDim2.new(0, options.min_size.X, 0, options.min_size.Y)
 	Window.ZIndex = Window.ZIndex + (windows * 10)
 
@@ -1115,22 +1117,6 @@ function library:AddWindow(title, options)
 				new_tab.Parent = tabs
 				new_tab.ZIndex = new_tab.ZIndex + (windows * 10)
 
-				local ContentHolder = Instance.new("Frame")
-				ContentHolder.Name = "ContentHolder"
-				ContentHolder.Parent = new_tab
-				ContentHolder.BackgroundColor3 = Color3.new(1, 1, 1)
-				ContentHolder.BackgroundTransparency = 1
-				ContentHolder.Size = UDim2.new(1, -20, 1, -10)
-				ContentHolder.Position = UDim2.new(0, 10, 0, 5)
-
-				local UIListLayout_2 = new_tab:FindFirstChild("UIListLayout")
-				if UIListLayout_2 then
-					UIListLayout_2.Parent = ContentHolder
-				end
-				UIListLayout_2.FillDirection = Enum.FillDirection.Vertical
-				UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-				UIListLayout_2.Padding = UDim.new(0, 5)
-
 				local function show()
 					if dropdown_open then return end
 					for i, v in next, tab_buttons:GetChildren() do
@@ -1163,7 +1149,7 @@ function library:AddWindow(title, options)
 
 						local label = Prefabs:FindFirstChild("Label"):Clone()
 
-						label.Parent = ContentHolder
+						label.Parent = new_tab
 						label.Text = label_text
 						label.Size = UDim2.new(0, gNameLen(label), 0, 20)
 						label.ZIndex = label.ZIndex + (windows * 10)
@@ -1177,7 +1163,7 @@ function library:AddWindow(title, options)
 
 						local button = Prefabs:FindFirstChild("Button"):Clone()
 
-						button.Parent = ContentHolder
+						button.Parent = new_tab
 						button.Text = button_text
 						button.Size = UDim2.new(0, gNameLen(button), 0, 20)
 						button.ZIndex = button.ZIndex + (windows * 10)
@@ -1208,7 +1194,7 @@ function library:AddWindow(title, options)
 
 						local switch = Prefabs:FindFirstChild("Switch"):Clone()
 
-						switch.Parent = ContentHolder
+						switch.Parent = new_tab
 						switch:FindFirstChild("Title").Text = switch_text
 
 						switch:FindFirstChild("Title").ZIndex = switch:FindFirstChild("Title").ZIndex + (windows * 10)
@@ -1250,7 +1236,7 @@ function library:AddWindow(title, options)
 
 						local textbox = Prefabs:FindFirstChild("TextBox"):Clone()
 
-						textbox.Parent = ContentHolder
+						textbox.Parent = new_tab
 						textbox.PlaceholderText = textbox_text
 						textbox.ZIndex = textbox.ZIndex + (windows * 10)
 						textbox:GetChildren()[1].ZIndex = textbox:GetChildren()[1].ZIndex + (windows * 10)
@@ -1283,7 +1269,7 @@ function library:AddWindow(title, options)
 
 						local slider = Prefabs:FindFirstChild("Slider"):Clone()
 
-						slider.Parent = ContentHolder
+						slider.Parent = new_tab
 						slider.ZIndex = slider.ZIndex + (windows * 10)
 
 						local title = slider:FindFirstChild("Title")
@@ -1394,17 +1380,17 @@ function library:AddWindow(title, options)
 						input:GetChildren()[1].ZIndex = input:GetChildren()[1].ZIndex + (windows * 10)
 						title.ZIndex = title.ZIndex + (windows * 10)
 
-						keybind.Parent = ContentHolder
+						keybind.Parent = new_tab
 						title.Text = "  " .. keybind_name
 						keybind.Size = UDim2.new(0, gNameLen(title) + 80, 0, 20)
 
 						local shortkeys = { -- thanks to stroketon for helping me out with this
-            RightControl = 'RightCtrl',
-            LeftControl = 'LeftCtrl',
-            LeftShift = 'LShift',
-            RightShift = 'RShift',
-            MouseButton1 = "Mouse1",
-            MouseButton2 = "Mouse2"
+							RightControl = 'RightCtrl',
+							LeftControl = 'LeftCtrl',
+							LeftShift = 'LShift',
+							RightShift = 'RShift',
+							MouseButton1 = "Mouse1",
+							MouseButton2 = "Mouse2"
 						}
 
 						local keybind = keybind_options.standard
@@ -1456,7 +1442,7 @@ function library:AddWindow(title, options)
 						indicator.ZIndex = indicator.ZIndex + (windows * 10)
 						dropdown:GetChildren()[3].ZIndex = dropdown:GetChildren()[3].ZIndex + (windows * 10)
 
-						dropdown.Parent = ContentHolder
+						dropdown.Parent = new_tab
 						dropdown.Text = "      " .. dropdown_name
 						box.Size = UDim2.new(1, 0, 0, 0)
 
@@ -1536,7 +1522,7 @@ function library:AddWindow(title, options)
 
 						local color_picker = Prefabs:FindFirstChild("ColorPicker"):Clone()
 
-						color_picker.Parent = ContentHolder
+						color_picker.Parent = new_tab
 						color_picker.ZIndex = color_picker.ZIndex + (windows * 10)
 
 						local palette = color_picker:FindFirstChild("Palette")
@@ -1653,7 +1639,7 @@ function library:AddWindow(title, options)
 
 						local console = Prefabs:FindFirstChild("Console"):Clone()
 
-						console.Parent = ContentHolder
+						console.Parent = new_tab
 						console.ZIndex = console.ZIndex + (windows * 10)
 						console.Size = UDim2.new(1, 0, console_options.full and 1 or 0, console_options.y)
 
@@ -1922,7 +1908,7 @@ function library:AddWindow(title, options)
 						local ha_data = {}
 
 						local ha = Prefabs:FindFirstChild("HorizontalAlignment"):Clone()
-						ha.Parent = ContentHolder
+						ha.Parent = new_tab
 
 						function ha_data:AddButton(...)
 							local data, object
@@ -1957,7 +1943,7 @@ function library:AddWindow(title, options)
 						toggle.ZIndex = toggle.ZIndex + (windows * 10)
 						button:GetChildren()[1].ZIndex = button:GetChildren()[1].ZIndex + (windows * 10)
 
-						folder.Parent = ContentHolder
+						folder.Parent = new_tab
 						button.Text = "      " .. folder_name
 
 						spawn(function()
